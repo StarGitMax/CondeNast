@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AtlasGCP">
+  <test name="SalesAgentTests">
+    <classes>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1412_1413_1414"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1415_1468"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1469"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1470"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1471"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1472"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1476"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1477"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1082_Sprint4_1478"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1083_Sprint4_TC_ALL"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1120_Sprint5_TC_1698_1699_1700"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1120_Sprint5_TC_1701_1702"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1120_Sprint5_TC_1703_1704_1705"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1120_Sprint5_TC_1885"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1123_Sprint5_TC_1831_1832_1833_1834_1835"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1124_Sprint5_TC_1680_1684_1685_1687_1688"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1638_Sprint6_TC_2091_2092_2096_2097"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1908_Sprint7_TC_2614_2615"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1908_Sprint7_TC_2616_2622_2624"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1908_Sprint7_TC_2621"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1911_Sprint7_TC_2564"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1911_Sprint7_TC_2565"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1911_Sprint7_TC_2566"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1911_Sprint7_TC_2567"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_619_Sprint6_TC_2169_2170_2171"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1776"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1777"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1778"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1779"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1780"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1786"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1797"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1799"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1800"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1806"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1808"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_624_Sprint5_TC_1809"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_624_Sprint5_TC_1810"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_624_Sprint5_TC_1812"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_627_Sprint5_TC_1707_1709"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_627_Sprint5_TC_1710"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_663_Sprint7_TC_2685_2686"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_663_Sprint7_TC_2687"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_665_Sprint7_TC_2551_2553"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_665_Sprint7_TC_2552"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_675_Sprint7_TC_2432_2433"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_677_Sprint7_2559_2560"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_677_Sprint7_2560"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_677_Sprint7_2562"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_686_Sprint5_TC_1752"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_786_Sprint4_TC_ALL"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_795_Sprint4_1401"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_795_Sprint4_ALL"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_883_Sprint7_TC_2569_2573"></class>
+           <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_883_Sprint7_TC_2578"></class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AtlasGCP">
+  <test name="SmokeSuiteTests">
+    <classes>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_001"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_002"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_003_RA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_003_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_004_RA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_004_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_005_MP"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_006_MP"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_007_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_008_SL"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_009_MP"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_010_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_011_SL"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_012_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_012_SL"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_012"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_013_CC"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_014_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_015"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_016"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_017"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_018_019"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_020_021"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_022"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_023"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_024_SA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_025_SL"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_026"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_027_CC"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_027_FU"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_028"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_029"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_030"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_031"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_032"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_033"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_034_035"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_036_RA"></class>
+            <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_036_SA"></class>
+            
+            
+    </classes>
+  </test>
+</suite>

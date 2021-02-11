@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AtlasGCP">
+  <test name="SalesAgentTests">
+    <classes>
+            <class name="com.CondeNast.TestScenarios.ATLAS_610_Sprint_TC_101"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_610_Sprint_TC_102_103_104_105_106"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_610_Sprint3_TC_99_100"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_626_Sprint3_TC_107_108_109_110"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_758_Sprint3_TC_111_112"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_758_Sprint3_TC_113_114"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_758_Sprint3_TC_115_117"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_758_Sprint3_TC_116_118__119_120_121"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_762_Sprint3_TC_128_129_133_134"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_762_Sprint3_TC_130_131"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_762_Sprint3_TC_132"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_798_Sprint3_TC_148"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_798_Sprint3_TC_149"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_973_Sprint3_TC_135_136_137_138_139"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_1081_Sprint3_TC_122_123"></class>
+            <class name="com.CondeNast.TestScenarios.ATLAS_1081_Sprint3_TC_124_125_126"></class>
+    </classes>
+  </test>
+</suite>
