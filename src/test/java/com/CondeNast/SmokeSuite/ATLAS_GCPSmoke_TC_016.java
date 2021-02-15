@@ -96,7 +96,7 @@ public class ATLAS_GCPSmoke_TC_016 extends BaseTest
 	public void createQuoteLine(String stage) throws Exception
 	{
 		opp.CreateNewQuoteLineItem();
-		uiDriver.WaitforElementPresent("Budget");
+		uiDriver.WaitforVisiblilityofElement("Budget");
 		Actions act = new Actions(uiDriver.driver);
 		act.doubleClick(uiDriver.driver.findElement(By.xpath("//label[text()='Budget']/following-sibling::div/div/input"))).sendKeys(Keys.DELETE).build().perform();;
 		Thread.sleep(1000);

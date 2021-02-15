@@ -647,6 +647,7 @@ public class Opportunities extends BaseTest
 		String img1 = uiDriver.CaptureFullScreenShot("Quote");
 		reporter.addScreenshotToReport(img1, "Quote Created Succesfully");
 		uiDriver.WaitforVisiblilityofElement("CreateNewineItem");
+		  Thread.sleep(15000);
 	}
 	
 	
