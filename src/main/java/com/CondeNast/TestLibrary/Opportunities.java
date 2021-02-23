@@ -504,6 +504,7 @@ public class Opportunities extends BaseTest
 	
 	public void ChangeBillingtype(String billingType) throws URISyntaxException, Exception
 	{
+		uiDriver.scrolltoViewElement("BillingType");
 		uiDriver.ClickOnButtonorLink("BillingType");
 		Thread.sleep(5000);
 		uiDriver.ClickOnButtonorLink(billingType);
@@ -642,12 +643,13 @@ public class Opportunities extends BaseTest
 		 */
 		uiDriver.screen.wait(Pattern.CreateQuotes, 60);
 		uiDriver.screen.click(Pattern.CreateQuotes);
+		uiDriver.WaitforVisiblilityofElement("CreateNewineItem");
+		Thread.sleep(15000);
 		reporter.logger.log(Status.PASS, "Successfully Clicked on Quote");
 		Thread.sleep(3000);
 		String img1 = uiDriver.CaptureFullScreenShot("Quote");
 		reporter.addScreenshotToReport(img1, "Quote Created Succesfully");
-		uiDriver.WaitforVisiblilityofElement("CreateNewineItem");
-		  Thread.sleep(15000);
+		
 	}
 	
 	
@@ -1636,6 +1638,55 @@ public class Opportunities extends BaseTest
 		else if(stage.equalsIgnoreCase("Closed Lost"))
 		{
 			uiDriver.screen.click(Pattern.ClosedLost);
+			Thread.sleep(3000);
+			uiDriver.ClickOnButtonorLink("LossReason");
+			Thread.sleep(5000);
+			uiDriver.ClickOnButtonorLink("BudgetCut");
+			Thread.sleep(5000);
+			uiDriver.SetValueForTextBox("Reason", "Budget Cut");
+			
+		}
+		Thread.sleep(5000);
+		String probability = uiDriver.ValuebyGetAttributeandStoreinVariable("Probability");
+		return probability;
+	}
+	
+	public String SelectOpportunityStage3(String stage) throws Exception
+	{
+		Thread.sleep(10000);
+		if(uiDriver.driver.findElements(By.xpath("(//label[text()='Stage'])[2]/following-sibling::div/lightning-base-combobox/div/div/input")).size()>0)
+		{
+			uiDriver.ClickOnButtonorLink("EditStage");
+		}
+		else
+		{
+			uiDriver.driver.findElement(By.xpath("//label[text()='Stage']/following-sibling::div/lightning-base-combobox/div/div/input")).click();
+		}
+		
+		Thread.sleep(10000);
+		if(stage.equalsIgnoreCase("Identifying Opportunity"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
+		}
+		else if(stage.equalsIgnoreCase("Shaping Proposal"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
+		}
+		else if(stage.equalsIgnoreCase("Verbal Commitment"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
+		}
+		else if(stage.equalsIgnoreCase("Contracting"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
+		}
+		else if(stage.equalsIgnoreCase("Closed Won"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
+		}
+		else if(stage.equalsIgnoreCase("Closed Lost"))
+		{
+			uiDriver.driver.findElement(By.xpath("//*[@data-value='"+stage+"']/span[2]/span")).click();
 			Thread.sleep(3000);
 			uiDriver.ClickOnButtonorLink("LossReason");
 			Thread.sleep(5000);

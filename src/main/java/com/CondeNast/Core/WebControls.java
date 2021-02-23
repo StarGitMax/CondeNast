@@ -227,6 +227,13 @@ public class WebControls extends WebDriverClass
 		js.executeScript("arguments[0].scrollIntoView();", Element);
 	}
 	
+	public void scrolltoViewInsideElement(WebElement Element) throws Exception
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", Element);
+		Thread.sleep(2000);
+	}
+	
 	
 	public void scrolltoViewElement(String sElement) throws Exception, URISyntaxException
 	{

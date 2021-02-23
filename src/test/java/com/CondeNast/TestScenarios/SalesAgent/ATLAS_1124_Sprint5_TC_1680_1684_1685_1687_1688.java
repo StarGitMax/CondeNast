@@ -40,6 +40,7 @@ public class ATLAS_1124_Sprint5_TC_1680_1684_1685_1687_1688 extends BaseTest
 		opp.ClickonCreateNewOpportunities();
 		String sval = opp.fillOpportunitiesForm(AccountName,"18000","26/02/2021","IdentifyingOpportunity","NA");
 		opp.SaveOpportunitiesDetails();
+		Thread.sleep(5000);
 		opp.CreateQuotes();
 		rowcount = opp.getQuoteLineItemsCount();
 		if(rowcount>0)

@@ -38,6 +38,7 @@ public class ATLAS_623_Sprint5_TC_1800 extends BaseTest
 		String[] sval1 = sval.split(";");
 		OppName = sval1[0];
 		opp.SaveOpportunitiesDetails();
+		Thread.sleep(5000);
 		opp.CreateQuotes();
 		rowcount = opp.getQuoteLineItemsCount();
 		if(rowcount>0)
@@ -51,7 +52,7 @@ public class ATLAS_623_Sprint5_TC_1800 extends BaseTest
 		// Closed Won (100%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Won");
+		opp.SelectOpportunityStage3("Closed Won");
 		opp.SelectClientBrand("Acer");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
@@ -90,7 +91,7 @@ public class ATLAS_623_Sprint5_TC_1800 extends BaseTest
      // Closed Won (100%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Won");
+		opp.SelectOpportunityStage3("Closed Won");
 		opp.SelectClientBrand("Acer");
 		opp.SaveOpportunitiesDetails();
 		

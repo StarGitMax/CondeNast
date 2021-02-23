@@ -43,7 +43,9 @@ public class MarketAccounts extends BaseTest
 	
 	public void ClickonDetails() throws Exception
 	{
-		uiDriver.ClickOnButtonorLink("MarketAccountDetails");
+		//uiDriver.ClickOnButtonorLink("MarketAccountDetails");
+		uiDriver.screen.click(Pattern.MarketAccountDetailsTab);
+		reporter.logger.log(Status.PASS, "Details Tab is Clicked");
 		Thread.sleep(5000);
 		uiDriver.WaitforVisiblilityofElement("AddressInformation");
 	}
@@ -129,8 +131,7 @@ public class MarketAccounts extends BaseTest
 	public void CancelEditChanges() throws URISyntaxException, Exception
 	{
 		uiDriver.ClickOnButtonorLink("CancelEditChanges");
-		Thread.sleep(15000);
-		uiDriver.WaitforVisiblilityofElement("EditMarketAccount");
+		Thread.sleep(1500);
 	}
 	
 	
@@ -213,8 +214,15 @@ public class MarketAccounts extends BaseTest
 		Thread.sleep(5000);
 		
 		uiDriver.ClickOnButtonorLink("MarketName");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.driver.findElement(By.xpath("//span[@title='"+smarket+"']")).click();
+		Thread.sleep(5000);
+		
+		uiDriver.ClickOnButtonorLink("MarketName2");
+		Thread.sleep(5000);
+		WebElement market = uiDriver.driver.findElement(By.xpath("//*[@data-value='"+smarket+"']/span[2]/span"));
+		uiDriver.scrolltoViewInsideElement(market);
+		market.click();
 		Thread.sleep(5000);
 		
 		SelectBillingCurrencies(sCurrency);
@@ -256,13 +264,13 @@ public class MarketAccounts extends BaseTest
 		}
 		
 		
-		if(uiDriver.driver.findElements(By.xpath("//label[text()='Company ID']/following-sibling::div/input")).size()>0)
+		if(uiDriver.driver.findElements(By.xpath("//label[text()='Company Identification Number']/following-sibling::div/input")).size()>0)
 		{
-			reporter.logger.log(Status.PASS, "Company ID is Present");
+			reporter.logger.log(Status.PASS, "Company Identification Number is Present");
 		}
 		else
 		{
-			reporter.logger.log(Status.FAIL, "Company ID is not Present");
+			reporter.logger.log(Status.FAIL, "Company Identification Number is not Present");
 		} 
 		
 
@@ -292,6 +300,19 @@ public class MarketAccounts extends BaseTest
 		{
 			reporter.logger.log(Status.FAIL, "'VAT Code is not Present");
 		} 
+	}
+	
+	public void validateBlockOrdersfield()
+	{
+		if(uiDriver.driver.findElements(By.xpath("//span[text()='Block Orders']/../following-sibling::div/span/input")).size()>0)
+		{
+			reporter.logger.log(Status.FAIL, "Block Orders Checkbox is Present");
+		}
+		else
+		{
+			reporter.logger.log(Status.PASS, "Block Orders Checkbox is not Present");
+		}
+		
 	}
 	
 	

@@ -57,7 +57,8 @@ public class Accounts extends BaseTest
 	
 	public void ClickNext() throws URISyntaxException, Exception
 	{
-		uiDriver.ClickOnButtonorLink("NewAccount_Next"); 
+		uiDriver.ClickOnButtonorLink("NewAccount_Next");
+		Thread.sleep(1000);
 		uiDriver.WaitforVisiblilityofElement("AccountName");
 	}
 	
@@ -204,6 +205,37 @@ public class Accounts extends BaseTest
 		uiDriver.ClickOnButtonorLink("SubCategory");
 		Thread.sleep(5000);
 		uiDriver.ClickOnButtonorLink("Cars_American");
+		Thread.sleep(5000);
+		 
+	}
+	
+	public void fillAccountdetails4(HashMap<String,String> cusDetails) throws IOException, URISyntaxException, Exception
+	{
+
+		 Thread.sleep(9000);
+		 uiDriver.WaitforVisiblilityofElement("AccountName");
+		 uiDriver.SetValueForTextBox("AccountName",cusDetails.get("AccountName"));
+		 
+		 WebElement BillingAddress = uiDriver.driver.findElement(By.xpath("//legend[text()='Billing Address']/following-sibling::div/div/div/lightning-lookup-address/div/lightning-base-combobox/div/div/input"));
+		 BillingAddress.sendKeys(cusDetails.get("BillingAddress"));
+		 Thread.sleep(5000);
+		 BillingAddress.sendKeys(Keys.ENTER);
+		 Thread.sleep(5000);
+		 
+		 uiDriver.scrolltoViewElement("AccountClass");
+		 uiDriver.ClickOnButtonorLink("AccountClass");
+		 Thread.sleep(500);
+		 uiDriver.ClickOnButtonorLink(cusDetails.get("AccountClass"));
+		 Thread.sleep(500);
+		 
+		uiDriver.ClickOnButtonorLink("AccountCategory");
+	    Thread.sleep(5000);
+		uiDriver.ClickOnButtonorLink(cusDetails.get("AccountCategory"));
+		Thread.sleep(5000);
+			
+		uiDriver.ClickOnButtonorLink("SubCategory");
+		Thread.sleep(5000);
+		uiDriver.ClickOnButtonorLink(cusDetails.get("SubCategory"));
 		Thread.sleep(5000);
 		 
 	}

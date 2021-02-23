@@ -48,25 +48,25 @@ public class ATLAS_624_Sprint5_TC_1812 extends BaseTest
 
 		//Verbal Commitment (75%)
 		opp.EditQuoteLine(sname);
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForList("QLStage", LIST.ByVisibleText, "Verbal Commitment (75%)");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		opp.SaveQuoteLineItemToCheckMandatoryFields();
 		opp.CloseQuoteLineItem();
 		
 		// Contracting (90%)
 		opp.EditQuoteLine(sname);
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForList("QLStage", LIST.ByVisibleText, "Contracting (90%)");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		opp.SaveQuoteLineItemToCheckMandatoryFields();
 		opp.CloseQuoteLineItem();
 				
 		// Closed Won (100%)
 		opp.EditQuoteLine(sname);
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForList("QLStage", LIST.ByVisibleText, "Closed Won (100%)");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		opp.SaveQuoteLineItemToCheckMandatoryFields();
 		opp.CloseQuoteLineItem();
 		

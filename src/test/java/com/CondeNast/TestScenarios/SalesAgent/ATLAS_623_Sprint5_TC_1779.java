@@ -52,7 +52,7 @@ public class ATLAS_623_Sprint5_TC_1779 extends BaseTest
 		Thread.sleep(10000);
 		opp.SelectOpportunityStage("Verbal Commitment");
 		opp.SelectClientBrand("Acer");
-		opp.SaveOpportunitiesDetails();
+		opp.SaveOpportunitiesDetails();	
 		
 		opp.EditQuoteLine(sname);
 		uiDriver.SetValueForList("QLStage", LIST.ByVisibleText, "Closed Won (100%)");
@@ -80,10 +80,10 @@ public class ATLAS_623_Sprint5_TC_1779 extends BaseTest
 		// Closed Won (100%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Won");
+		opp.SelectOpportunityStage3("Closed Won");
 		opp.SaveOpportunitiesDetails();
 		
-		opp.LogoutofSalesForceUser(sfUser_SA);
+		//opp.LogoutofSalesForceUser(sfUser_SA);
 		Thread.sleep(5000);
  }
 	

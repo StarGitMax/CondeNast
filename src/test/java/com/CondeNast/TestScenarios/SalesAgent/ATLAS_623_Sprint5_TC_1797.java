@@ -37,6 +37,7 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 		String[] sval1 = sval.split(";");
 		OppName = sval1[0];
 		opp.SaveOpportunitiesDetails();
+		Thread.sleep(5000);
 		opp.CreateQuotes();
 		rowcount = opp.getQuoteLineItemsCount();
 		if(rowcount>0)
@@ -49,13 +50,13 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 		
 		//Verbal Commitment (75%)
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Verbal Commitment");
+		Thread.sleep(5000);
+		opp.SelectOpportunityStage3("Verbal Commitment");
 		opp.SelectClientBrand("Acer");
 		opp.SaveOpportunitiesDetails();
 		
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForTextBox("CampaignInitiative", "Testing");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
@@ -71,17 +72,17 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 		
 		opp.EditQuoteLine(sname);
 		uiDriver.SetValueForList("QLStage", LIST.ByVisibleText, "Closed Won (100%)");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		opp.SaveQuoteLineItem();
 
 		// Contracting (90%)
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Contracting");
+		Thread.sleep(5000);
+		opp.SelectOpportunityStage3("Contracting");
 		opp.SaveOpportunitiesDetails();
 		
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForTextBox("CampaignInitiative", "Testing");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
@@ -89,7 +90,7 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 		{
 			String img1 = uiDriver.CaptureFullScreenShot("OpportunitiesDetails");
 			reporter.addScreenshotToReport(img1, "Opportunity Created/Modified Succesfully");
-			Thread.sleep(15000);
+			Thread.sleep(5000);
 			uiDriver.ClickOnButtonorLink("CloseErrorDialog");
 			Thread.sleep(2000);
 		}
@@ -98,12 +99,12 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 
 		// Closed Won (100%)
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Won");
+		Thread.sleep(5000);
+		opp.SelectOpportunityStage3("Closed Won");
 		opp.SaveOpportunitiesDetails();
 		
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		uiDriver.SetValueForTextBox("CampaignInitiative", "Testing");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
@@ -111,7 +112,7 @@ public class ATLAS_623_Sprint5_TC_1797 extends BaseTest
 		{
 			String img1 = uiDriver.CaptureFullScreenShot("OpportunitiesDetails");
 			reporter.addScreenshotToReport(img1, "Opportunity Created/Modified Succesfully");
-			Thread.sleep(15000);
+			Thread.sleep(5000);
 			uiDriver.ClickOnButtonorLink("CloseErrorDialog");
 			Thread.sleep(2000);
 		}

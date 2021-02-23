@@ -30,6 +30,7 @@ public class ImagePatterns extends WebDriverClass
 	public static Pattern OpportunityDetailsTab;
 	public static Pattern PipelineDelivery;
 	public static Pattern MarketAccountEdit;
+	public static Pattern MarketAccountDetailsTab;
 	
 	static
 	{
@@ -59,5 +60,6 @@ public class ImagePatterns extends WebDriverClass
 	    OpportunityDetailsTab =  new Pattern(sPath+"/ImageRepository/OpportunityDetailsTab.PNG");
 	    PipelineDelivery =  new Pattern(sPath+"/ImageRepository/PipelineDelivery.PNG");
 	    MarketAccountEdit = new Pattern(sPath+"/ImageRepository/MarketAccountEdit.PNG");
+	    MarketAccountDetailsTab = new Pattern(sPath+"/ImageRepository/MarketAccountDetailsTab.PNG");
 	}
 }

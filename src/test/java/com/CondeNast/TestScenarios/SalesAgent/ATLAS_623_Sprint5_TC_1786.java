@@ -51,14 +51,14 @@ public class ATLAS_623_Sprint5_TC_1786 extends BaseTest
 		// Closed Won (100%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Won");
+		opp.SelectOpportunityStage3("Closed Won");
 		opp.SelectClientBrand("Acer");
 		opp.SaveOpportunitiesDetails();
 		
 		//Identifying Opportunity (10%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Identifying Opportunity");
+		opp.SelectOpportunityStage3("Identifying Opportunity");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
@@ -74,7 +74,7 @@ public class ATLAS_623_Sprint5_TC_1786 extends BaseTest
 		//Shaping Proposal (50%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Shaping Proposal");
+		opp.SelectOpportunityStage3("Shaping Proposal");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
@@ -90,7 +90,7 @@ public class ATLAS_623_Sprint5_TC_1786 extends BaseTest
 		//Verbal Commitment (75%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Verbal Commitment");
+		opp.SelectOpportunityStage3("Verbal Commitment");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
@@ -106,7 +106,7 @@ public class ATLAS_623_Sprint5_TC_1786 extends BaseTest
 		//Contracting (90%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Contracting");
+		opp.SelectOpportunityStage3("Contracting");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
@@ -123,7 +123,7 @@ public class ATLAS_623_Sprint5_TC_1786 extends BaseTest
 		// Closed Lost (0%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Lost");
+		opp.SelectOpportunityStage3("Closed Lost");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)

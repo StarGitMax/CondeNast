@@ -50,7 +50,7 @@ public class ATLAS_623_Sprint5_TC_1778 extends BaseTest
 		//Identifying Opportunity (10%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Identifying Opportunity");
+		opp.SelectOpportunityStage3("Identifying Opportunity");
 		opp.SaveOpportunitiesDetails();
 		
 		opp.DeleteMasterQLI(sname);
@@ -59,7 +59,7 @@ public class ATLAS_623_Sprint5_TC_1778 extends BaseTest
 		//Shaping Proposal (50%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Shaping Proposal");
+		opp.SelectOpportunityStage3("Shaping Proposal");
 		opp.SaveOpportunitiesDetails();
 				
 		
@@ -69,7 +69,7 @@ public class ATLAS_623_Sprint5_TC_1778 extends BaseTest
 		// Closed Lost (0%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Lost");
+		opp.SelectOpportunityStage3("Closed Lost");
 		opp.SaveOpportunitiesDetails();
 		
 		opp.LogoutofSalesForceUser(sfUser_SA);

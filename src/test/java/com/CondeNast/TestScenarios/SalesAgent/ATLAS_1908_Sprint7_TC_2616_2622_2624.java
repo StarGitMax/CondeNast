@@ -7,6 +7,7 @@ import com.CondeNast.TestLibrary.BaseTest;
 import com.CondeNast.TestLibrary.MarketAccounts;
 import com.CondeNast.TestLibrary.Opportunities;
 import com.CondeNast.TestLibrary.SalesforceLogin;
+import com.aventstack.extentreports.Status;
 
 public class ATLAS_1908_Sprint7_TC_2616_2622_2624 extends BaseTest
 {
@@ -16,13 +17,11 @@ public class ATLAS_1908_Sprint7_TC_2616_2622_2624 extends BaseTest
 	Accounts acc = new Accounts();
 	String AccountName;
 	String mAccount;
-	String sfUser_SA = "Ariana Stachrowski";
 	
 	@Test
 	public void ValidateMarketAccounts() throws Exception
 	{
 		sl.NavigateandLogin();
-		opp.LoginAsDifferentUsers(sfUser_SA);
 		
 		AccountName = CreateAccount();
 		
@@ -32,10 +31,21 @@ public class ATLAS_1908_Sprint7_TC_2616_2622_2624 extends BaseTest
 	     ma.fillaccountDetails(AccountName, "GCP HQ", "USD", "Monitored");
 	     mAccount = ma.SaveMarketAcountDetails();
 	     
-	     ma.ClickonMarketAccounts();
-	     ma.DeleteMarketAccount(mAccount);
-	     opp.LogoutofSalesForceUser(sfUser_SA);
-         Thread.sleep(5000);
+	     ma.ClickonDetails();
+	     String img1 = uiDriver.CaptureFullScreenShot("Market");
+		 reporter.addScreenshotToReport(img1, "Market Account Details");
+		 Thread.sleep(5000);
+		 
+		 if(mAccount.contains(":"+AccountName))
+		 {
+			 reporter.logger.log(Status.PASS, "Market Account Name Created in 'Market Name:Account Name' format");
+		 }
+		 else
+		 {
+			 reporter.logger.log(Status.FAIL, "Market Account Name not Created in 'Market Name:Account Name' format");
+		 }
+	     
+	    sl.Logout();
 	}
 	
 	public String CreateAccount() throws Exception
@@ -52,12 +62,14 @@ public class ATLAS_1908_Sprint7_TC_2616_2622_2624 extends BaseTest
 		cusDetails.put("BillingAddress", billingAddress);
 		cusDetails.put("ShippingAddress", shippingAddress);
 		cusDetails.put("AccountClass", accountClass);
+		cusDetails.put("AccountCategory", "Beauty_PersonalCare");
+		cusDetails.put("SubCategory", "Luxury_Cosmetics");
 		
 		acc.ClickonAccounts();
 		acc.ClickonCreateNewAccount();
 		acc.SelectAccountType(accType);
 		acc.ClickNext();
-		acc.fillAccountdetails2(cusDetails);
+		acc.fillAccountdetails4(cusDetails);
 		String accName = acc.SaveAccountDetails();
 		
 		return accName;

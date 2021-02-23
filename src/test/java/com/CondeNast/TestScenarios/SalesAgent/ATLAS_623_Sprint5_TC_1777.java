@@ -50,14 +50,14 @@ public class ATLAS_623_Sprint5_TC_1777 extends BaseTest
 
 		// Closed Lost (0%)
 		opp.EditOpprtunity();
-		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Closed Lost");
+		Thread.sleep(5000);
+		opp.SelectOpportunityStage3("Closed Lost");
 		opp.SaveOpportunitiesDetails();
 		
 		//Identifying Opportunity (10%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Identifying Opportunity");
+		opp.SelectOpportunityStage3("Identifying Opportunity");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
@@ -73,7 +73,7 @@ public class ATLAS_623_Sprint5_TC_1777 extends BaseTest
 		//Shaping Proposal (50%)
 		opp.EditOpprtunity();
 		Thread.sleep(10000);
-		opp.SelectOpportunityStage("Shaping Proposal");
+		opp.SelectOpportunityStage3("Shaping Proposal");
 		uiDriver.ClickOnButtonorLink("SaveOpportunitiesDetails");
 		Thread.sleep(5000);
 		if(uiDriver.driver.findElements(By.xpath("//button[@id='window']")).size()>0)
