@@ -3,9 +3,9 @@
 <suite name="AtlasGCP">
   <test name="GCP Tests">
     <classes>
-             <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_001"></class>
-             <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_004_RA"></class>
-             <class name="com.CondeNast.SmokeSuite.ATLAS_GCPSmoke_TC_023"></class>
+             <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_1911_Sprint7_TC_2567"></class>
+             <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1786"></class>
+             <class name="com.CondeNast.TestScenarios.SalesAgent.ATLAS_623_Sprint5_TC_1778"></class>
     </classes>
   </test>	
 </suite>

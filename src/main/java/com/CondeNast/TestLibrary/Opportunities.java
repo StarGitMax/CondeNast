@@ -641,10 +641,10 @@ public class Opportunities extends BaseTest
 		 * 
 		 * }
 		 */
-		uiDriver.screen.wait(Pattern.CreateQuotes, 60);
-		uiDriver.screen.click(Pattern.CreateQuotes);
+		uiDriver.screen.wait(Pattern.CreateQuotes.exact(), 60);
+		uiDriver.screen.click(Pattern.CreateQuotes.exact());
+		Thread.sleep(5000);
 		uiDriver.WaitforVisiblilityofElement("CreateNewineItem");
-		Thread.sleep(15000);
 		reporter.logger.log(Status.PASS, "Successfully Clicked on Quote");
 		Thread.sleep(3000);
 		String img1 = uiDriver.CaptureFullScreenShot("Quote");
